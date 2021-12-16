@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4156D39276B132600487D5A /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4156D38276B132600487D5A /* EmojiCell.swift */; };
 		C45A75E32768440400C96009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A75E22768440400C96009 /* AppDelegate.swift */; };
 		C45A75E52768440400C96009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A75E42768440400C96009 /* SceneDelegate.swift */; };
 		C45A75EA2768440400C96009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45A75E82768440400C96009 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4156D38276B132600487D5A /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
 		C45A75DF2768440400C96009 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45A75E22768440400C96009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45A75E42768440400C96009 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4156D36276B12A000487D5A /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C45A75E82768440400C96009 /* Main.storyboard */,
+				C45A75ED2768440600C96009 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		C4156D37276B12BB00487D5A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C4156D38276B132600487D5A /* EmojiCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C45A75D62768440400C96009 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +81,7 @@
 		C45A75E12768440400C96009 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				C45A75F02768440600C96009 /* Info.plist */,
 				C45A76002768525400C96009 /* Manager */,
 				C45A75F6276844E800C96009 /* Model */,
 				C45A75E42768440400C96009 /* SceneDelegate.swift */,
@@ -92,8 +112,8 @@
 		C45A75FA276849C400C96009 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C45A75E82768440400C96009 /* Main.storyboard */,
-				C45A75ED2768440600C96009 /* LaunchScreen.storyboard */,
+				C4156D37276B12BB00487D5A /* Cells */,
+				C4156D36276B12A000487D5A /* StoryBoard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,7 +123,6 @@
 			children = (
 				C45A75E22768440400C96009 /* AppDelegate.swift */,
 				C45A75EB2768440600C96009 /* Assets.xcassets */,
-				C45A75F02768440600C96009 /* Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -188,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45A75FD27684B4A00C96009 /* EmojiTableViewController.swift in Sources */,
+				C4156D39276B132600487D5A /* EmojiCell.swift in Sources */,
 				C45A76022768528300C96009 /* CellManager.swift in Sources */,
 				C45A75E32768440400C96009 /* AppDelegate.swift in Sources */,
 				C45A75F82768450D00C96009 /* Emoji.swift in Sources */,
@@ -269,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -324,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -349,7 +369,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +398,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -32,7 +32,7 @@ extension EmojiTableViewController /*: UITableViewDataSource */ {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let emoji = emojis[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell")! as! EmojiCell /// конвертируем
         cellManager.configure(cell, with: emoji)
         return cell
     }
