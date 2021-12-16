@@ -12,7 +12,8 @@ class CellManager {
     
     func configure(_ cell: UITableViewCell, with emoji: Emoji) {
         
-        
+        cell.textLabel?.text = emoji.symbol
+        cell.detailTextLabel?.text = emoji.name
         
     }
     

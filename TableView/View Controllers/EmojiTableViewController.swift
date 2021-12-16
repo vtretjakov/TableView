@@ -9,8 +9,17 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
 
-    var emojis = [Emoji]()
+    // MARK: - Properties
     
+    let cellManager = CellManager()
+    var emojis: [Emoji]!
+    
+    // MARK: - UIViewControllerMethods
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        emojis = Emoji.loadAll() ?? Emoji.loadDefaults()
+    }
     
 }
 // MARK: - UITableViewDataSource
@@ -24,6 +33,7 @@ extension EmojiTableViewController /*: UITableViewDataSource */ {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let emoji = emojis[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell")!
+        cellManager.configure(cell, with: emoji)
         return cell
     }
     

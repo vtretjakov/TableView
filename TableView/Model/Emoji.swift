@@ -18,3 +18,21 @@ struct Emoji {
         self.usage = usage
     }
 }
+
+extension Emoji {
+    static var all: [Emoji] {
+        return [
+            Emoji(symbol: "💰", name: "Деньги", description: "Мешок со знаком доллара", usage: "Ответить когда речь идет о деньгах"),
+            Emoji(symbol: "🐱", name: "Кошка", description: "Мордочка кошки", usage: "Что-то дружелюбное"),            Emoji(symbol: "☑️", name: "Галочка", description: "Галочка на сером фоне", usage: "Дела сделаны"),            Emoji(symbol: "⛔️", name: "Стоп", description: "Знак Стоп", usage: "Проезд запрещен"),
+        ]
+    }
+    
+    static func loadAll() -> [Emoji]? {
+        return nil
+    }
+    
+    static func loadDefaults() -> [Emoji] {
+        return all
+    }
+    
+}
