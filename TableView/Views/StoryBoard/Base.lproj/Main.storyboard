@@ -47,8 +47,8 @@
                                         <constraint firstItem="e60-ZT-Kpz" firstAttribute="top" secondItem="bCM-oT-qx8" secondAttribute="bottom" constant="8" id="Cti-8w-eXR"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="bCM-oT-qx8" secondAttribute="trailing" id="Wps-ie-Lfj"/>
                                         <constraint firstItem="e60-ZT-Kpz" firstAttribute="leading" secondItem="uLN-uu-Awf" secondAttribute="trailing" constant="20" id="c2j-xo-APF"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="uLN-uu-Awf" secondAttribute="bottom" id="e3Z-5F-AG9"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="e60-ZT-Kpz" secondAttribute="bottom" id="gOf-dJ-0FE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="uLN-uu-Awf" secondAttribute="bottom" priority="750" id="e3Z-5F-AG9"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="e60-ZT-Kpz" secondAttribute="bottom" priority="750" id="gOf-dJ-0FE"/>
                                         <constraint firstItem="uLN-uu-Awf" firstAttribute="leading" secondItem="Kaj-PO-Pl4" secondAttribute="leadingMargin" id="kwZ-hi-koz"/>
                                         <constraint firstItem="bCM-oT-qx8" firstAttribute="top" secondItem="Kaj-PO-Pl4" secondAttribute="topMargin" id="lnM-eE-9Xn"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="e60-ZT-Kpz" secondAttribute="trailing" id="ng9-Qw-p37"/>
@@ -73,7 +73,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ape-NT-4PA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1713.0434782608697" y="79.6875"/>
+            <point key="canvasLocation" x="1630" y="80"/>
         </scene>
         <!--Add-->
         <scene sceneID="5I9-b0-5j3">
@@ -122,7 +122,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKN-oQ-3ri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2514" y="80"/>
+            <point key="canvasLocation" x="2488" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BqY-o4-89F">
@@ -140,7 +140,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPb-kw-ffG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802.89855072463774" y="79.6875"/>
+            <point key="canvasLocation" x="777" y="80"/>
         </scene>
     </scenes>
     <resources>
