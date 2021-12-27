@@ -17,5 +17,4 @@ class CellManager {
         cell.descriptionLabel.text = emoji.description
         
     }
-    
 }
